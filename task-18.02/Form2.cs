@@ -12,29 +12,11 @@ namespace task_18._02
 {
     public partial class Form2 : Form
     {
-        public Form2()
+        public Form2(string s)
         {
             InitializeComponent();
+            label3.Text += " "+ s;
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

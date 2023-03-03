@@ -6,18 +6,24 @@ using System.Threading.Tasks;
 
 namespace task_18._02
 {
-    internal class Class1
-    {
-        enum Status
+    public enum Status
         {
-            Зарезервировано, Свободные, Заняты, Выписываются
+            Зарезервировано, Свободно, Заняты, Выписываются
         }
-        class Person
+        public class Person
         {
             public Status status;
             public string name;
-
-
+            public int room;
+        public int number;
+        public static int id = -1;
+        public Person(Status s, string n, int r)
+        {
+            status = s;
+            name = n;
+            room = r;
+            number = ++id;
         }
-    }
+        }
+    
 }
